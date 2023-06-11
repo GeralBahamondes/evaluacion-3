@@ -1,0 +1,87 @@
+/* Custom styles for the form */
+body {
+    background-color: #f8f9fa;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #cfa828;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .text-danger {
+    font-size: 14px;
+    color: #dc3545;
+    margin-top: 5px;
+  }
+  
+  .submit-container {
+    margin-top: 20px;
+  }
+  
+  .form-check-label {
+    font-weight: normal;
+  }
+  
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Additional custom styles */
+  .add-hobby-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .add-hobby-container input[type="text"] {
+    flex: 1;
+    margin-right: 5px;
+  }
+  
+  .add-hobby-container button {
+    flex-shrink: 0;
+  }
+  
+  

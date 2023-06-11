@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluacion 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mt-1">
+        <h2>Formulario de Registro </h2>
+        <form action="target.html" method="post" onsubmit="return validar()">
+            <div class="row g-6">
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" class="form-control" type="text" placeholder="Ingrese su nombre ">
+                            <div id="err_nombre" class="text-danger"></div>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input id="correo" class="form-control" type="text" placeholder="Ingrese su Correo">
+                            <div id="err_correo" class="text-danger"></div>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="contraseña" class="form-label">Contraseña</label>
+                            <input id="contraseña" class="form-control" type="password" placeholder="Ingrese su Contraseña">
+                            <div id="err_contraseña" class="text-danger"></div>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <label for="conpass" class="form-label">Confirmar Contraseña</label>
+                            <input id="conpass" class="form-control" type="password" placeholder="Confirme su contraseña">
+                            <div id="err_conpass" class="text-danger"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input id="direccion" class="form-control" type="text" placeholder="Ingrese su dirección">
+                            <div id="err_direccion" class="text-danger"></div>
+    
+                            <label for="codigo_postal" class="form-label">Código Postal</label>
+                            <input id="codigo_postal" class="form-control" type="text" placeholder="Ingrese su código postal">
+                            <div id="err_codigo_postal" class="text-danger"></div>
+                        </div>
+                    
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input id="telefono" class="form-control" type="text" placeholder="Ingrese su Teléfono">
+                            <div id="err_telefono" class="text-danger"></div>
+    
+                            <label for="web" class="form-label">Página web personal</label>
+                            <input id="web" class="form-control" type="text" placeholder="Ingrese su página web personal">
+                            <div id="err_web" class="text-danger"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="hobby" class="form-label">Aficiones</label>
+                            <input type="text" class="form-control" id="hobby" placeholder="Ingresa una afición">
+                            <button id="addHobby" class="btn btn-dark mt-2">Agregar</button>
+                            <div id="err_hobby" class="text-danger"></div>
+                            <ul id="hobbyList" class="ul">
+                            </ul>
+                        </div>
+    
+                        <div class="col-md-6">
+                            <label for="comuna">Comuna:</label>
+                            <select id="comuna" name="comuna" class="form-control">
+                                <option value="" disabled selected>Seleccione solo una opcion</option>
+                                <option value="Panguipulli">Vadivia</option>
+                                <option value="Valdivia">Temuco</option>
+                                <option value="Temuco">Osorno</option>
+                                <option value="Temuco">Mariquina</option>
+                                <option value="Temuco">Mafil</option>
+                                <option value="Temuco">Paillaco</option>
+                            </select>
+                            <div id="err_comuna"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input id="check" class="form-check-input" type="checkbox">
+            <label for="check" class="form-check-label">Acepto todos los terminos y condiciones</label>
+            <div class="submit-container">
+                <button class="btn btn-success" type="submit"  onclick="validar()">Enviar</button>
+                <div class="form-check">
+                    <div id="err_check" class="text-danger"></div>
+                </div>
+            </div>
+        </form>
+    </div> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
