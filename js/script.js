@@ -95,8 +95,8 @@ function validar_contraseña() {
         div.className = "text-danger";
         return false;
     } else if (contraseña !== conpass) {
-        div.innerText = "La confirmación no coincide con la contraseña.";
-        div_conpass.innerText = "La confirmación no coincide con la contraseña.";
+        div.innerText = "Las contrasenas no coinciden";
+        div_conpass.innerText = "Las contrasenas no coinciden";
         div.className = "text-danger";
         div_conpass.className = "text-danger"; 
         return false;
@@ -133,11 +133,11 @@ function validar_telefono() {
         div.className = "text-danger";
         return false;
     } else if (str_telefono.length != 9) {
-        div.innerText= "Los números de teléfono deben tener 9 dígitos.";
+        div.innerText= "El número de teléfono debe tener 9 dígitos.";
         div.className = "text-danger";
         return false;
     } else if (str_telefono[0] != '9') {
-        div.innerText= "Los números de móvil deben comenzar con 9.";
+        div.innerText= "los numeros relefonicos deben comenzar con 9";
         div.className = "text-danger";
         return false;
     } else {
@@ -150,7 +150,7 @@ function validar_hobby() {
     var list = document.getElementById("hobbyList");
     var div = document.getElementById("err_hobby");
     if (list.getElementsByTagName("li").length < 2){
-        div.innerText = "Debe ingresar al menos dos aficiones.";
+        div.innerText = "Debe ingresar al menos dos hobbys.";
         div.className = "text-danger";
         return false;
     }else{
